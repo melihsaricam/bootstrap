@@ -44,11 +44,10 @@ env:
     - secure: "RKWpS+P20b4tG9tawzCMJSmQftoonmC7tJzyGYiHuEM1TcpHALLBcnzKlr/+DiPTfzDJWY4kS8pxfhK4uXOe8OHnhpMNub7LEWtFPePlZIervOJcsOydaQocTKqVVWD6OUubMeQmQ+tZmvmpjoJ1uPPEbFs9ciF7+dv3U5tLUZ0="
     - secure: "XswSKBY0HJ/aO9VOBeWlvGpqSFF/DsJmNKz7o5RkJMJX340qe44J929uUNwwOwlv9YrgptzC2W6l8bpmZQV+p6IYs99SoSA8CCaUfIJaqeU9x/UiT5vIHgqaNax+vFJwvzHLpF5v/ggFqFEKCd54gCDasePLTztHeC4oL104iaQ="
   matrix:
-    - TWBS_TEST=core
-    - TWBS_TEST=validate-html
-    - TWBS_TEST=sauce-js-unit
-    - NODE_VERSION=4
-    - NODE_VERSION=5
+    - NODE_VERSION=4 TWBS_TEST=core
+    - NODE_VERSION=5 TWBS_TEST=core
+    - NODE_VERSION=5 TWBS_TEST=validate-html
+    - NODE_VERSION=5 TWBS_TEST=sauce-js-unit
 
 matrix:
   fast_finish: true
